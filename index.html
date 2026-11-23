@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>КОД МОНТАЖЁРА — Практикум 2027</title>
+  <meta name="description" content="Практикум 2027 по креативному монтажу, ИИ-инструментам и заработку на видео. Старт 1 декабря." />
+  <meta name="theme-color" content="#f9f2ee" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="КОД МОНТАЖЁРА — Практикум 2027" />
+  <meta property="og:description" content="3 практических лекции, разбор креативного ролика, тренды 2027 и заработок на монтаже. Старт 1 декабря." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000630'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23f9f2ee' font-family='monospace' font-size='28' font-weight='700'%3EКМ%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts: Geist Mono (Cyrillic) + Inter fallback for Helvetica Neue -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-backdrop">
+    <!-- Desktop-only hint banner (>= 768px) -->
+    <aside class="desktop-banner" id="desktopBanner" role="note" aria-label="Рекомендация открыть на телефоне">
+      <button type="button" class="desktop-banner__close" id="desktopBannerClose" aria-label="Скрыть уведомление">✕</button>
+      <div class="desktop-banner__icon" aria-hidden="true">📱</div>
+      <div class="desktop-banner__title">МОБИЛЬНАЯ ВЕРСИЯ</div>
+      <p class="desktop-banner__text">
+        Для лучшего впечатления откройте этот сайт на мобильном устройстве
+      </p>
+    </aside>
+
+    <main class="mobile-shell" id="top">
+      <!-- Subtle 4% film grain overlay -->
+      <div class="grain-overlay" aria-hidden="true"></div>
+
+      <!-- =====================================================
+           SCREEN 1: HERO — «КОД МОНТАЖЁРА»
+      ====================================================== -->
+      <section class="section-hero">
+        <header class="top-nav">
+          <a href="#program" class="top-nav__link top-nav__link--muted js-scroll">программа</a>
+          <a href="#tariff" class="top-nav__link js-scroll">занять место</a>
+        </header>
+
+        <h1 class="display-title display-title--hero">
+          <span class="sr-only">КОД МОНТАЖЁРА</span>
+          <img src="assets/title-kod-montazhera.png" alt="КОД МОНТАЖЁРА" width="276" height="71" />
+        </h1>
+
+        <div class="hero-stage">
+          <img
+            src="assets/hero-portrait.png"
+            alt="Дмитрий Мозжухин"
+            class="hero-stage__portrait"
+            width="160"
+            height="169"
+          />
+
+          <!-- Floating glass card: Теория -->
+          <div class="glass-card glass-card--theory">
+            <img src="assets/sticker-boy-phone.png" alt="" class="glass-card__sticker" aria-hidden="true" />
+            <div class="glass-card__surface">
+              <div class="glass-card__head">теория</div>
+              <div class="glass-card__body">3 ПРАКТИЧЕСКИХ<br />ЛЕКЦИИ</div>
+            </div>
+          </div>
+
+          <!-- Floating glass card: Практика -->
+          <div class="glass-card glass-card--practice">
+            <img src="assets/sticker-boy-phone.png" alt="" class="glass-card__sticker" aria-hidden="true" />
+            <div class="glass-card__surface">
+              <div class="glass-card__head">практика</div>
+              <div class="glass-card__body">РАЗБОР КРЕАТИВНОГО<br />РОЛИКА</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-subtitle">
+          <div class="hero-subtitle__title">ПРАКТИКУМ 2027</div>
+          <div class="hero-subtitle__date">старт 1 декабря</div>
+        </div>
+
+        <div class="hero-cta-wrap">
+          <img
+            src="assets/hero-camcorder.png"
+            alt=""
+            class="hero-cta-wrap__cam"
+            aria-hidden="true"
+          />
+          <a href="#tariff" class="btn-primary btn-primary--hero js-scroll">
+            <span class="btn-primary__text">занять место</span>
+            <span class="btn-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           MARQUEE 1
+      ====================================================== -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>стань звездой монтажа в 2027 году?</span>
+          <span>стань звездой монтажа в 2027 году?</span>
+          <span>стань звездой монтажа в 2027 году?</span>
+          <span>стань звездой монтажа в 2027 году?</span>
+          <span>стань звездой монтажа в 2027 году?</span>
+          <span>стань звездой монтажа в 2027 году?</span>
+        </div>
+        <div class="marquee__track" aria-hidden="true">
+          <span>стань звездой монтажа в 2027 году?</span>
+          <span>стань звездой монтажа в 2027 году?</span>
+          <span>стань звездой монтажа в 2027 году?</span>
+          <span>стань звездой монтажа в 2027 году?</span>
+          <span>стань звездой монтажа в 2027 году?</span>
+          <span>стань звездой монтажа в 2027 году?</span>
+        </div>
+      </div>
+
+      <!-- =====================================================
+           SCREEN 2: «ПРАКТИКУМ ДЛЯ ТЕХ КТО» + 5-CARD SLIDER
+      ====================================================== -->
+      <section class="section-audience" id="audience">
+        <div class="audience-header">
+          <h2 class="display-title display-title--praktikum">
+            <span class="sr-only">практикум для тех кто</span>
+            <img src="assets/title-praktikum.png" alt="практикум" width="268" height="78" />
+          </h2>
+
+          <img
+            src="assets/sticker-boy-phone.png"
+            alt=""
+            class="audience-header__sticker"
+            aria-hidden="true"
+          />
+
+          <div class="audience-header__subrow">
+            <span>для тех</span>
+            <span>кто</span>
+          </div>
+        </div>
+
+        <div class="audience-slider" id="audienceSlider" role="region" aria-label="Для кого практикум">
+          <!-- Card 1 -->
+          <article class="audience-card">
+            <img src="assets/card-1-tote.png" alt="" class="audience-card__underlay audience-card__sticker--tote" aria-hidden="true" />
+            <div class="audience-card__box">
+              <div class="audience-card__top">
+                <h3 class="audience-card__title">ХОЧЕТ ПОНИМАТЬ ТРЕНДЫ<br />2027 ГОДА</h3>
+              </div>
+              <div class="audience-card__bottom">
+                <p class="audience-card__desc">и использовать<br />ИИ как инструмент заработка</p>
+              </div>
+            </div>
+            <img src="assets/card-1-tote.png" alt="" class="audience-card__sticker audience-card__sticker--tote" aria-hidden="true" />
+          </article>
+
+          <!-- Card 2 -->
+          <article class="audience-card">
+            <img src="assets/card-2-receipt.png" alt="" class="audience-card__underlay audience-card__sticker--receipt" aria-hidden="true" />
+            <div class="audience-card__box">
+              <div class="audience-card__top">
+                <h3 class="audience-card__title">ХОЧЕТ РАСШИРИТЬ<br />СВОИ УСЛУГИ</h3>
+              </div>
+              <div class="audience-card__bottom">
+                <p class="audience-card__desc">и увеличить средний чек</p>
+              </div>
+            </div>
+            <img src="assets/card-2-receipt.png" alt="" class="audience-card__sticker audience-card__sticker--receipt" aria-hidden="true" />
+          </article>
+
+          <!-- Card 3 -->
+          <article class="audience-card">
+            <img src="assets/card-3-foil.png" alt="" class="audience-card__underlay audience-card__sticker--foil" aria-hidden="true" />
+            <div class="audience-card__box">
+              <div class="audience-card__top">
+                <h3 class="audience-card__title">ИЩЕТ НОВЫЕ<br />ИСТОЧНИКИ ДОХОДА</h3>
+              </div>
+              <div class="audience-card__bottom">
+                <p class="audience-card__desc">и дополнительные навыки</p>
+              </div>
+            </div>
+            <img src="assets/card-3-foil.png" alt="" class="audience-card__sticker audience-card__sticker--foil" aria-hidden="true" />
+          </article>
+
+          <!-- Card 4 -->
+          <article class="audience-card">
+            <img src="assets/card-4-macbook.png" alt="" class="audience-card__underlay audience-card__sticker--macbook" aria-hidden="true" />
+            <div class="audience-card__box">
+              <div class="audience-card__top">
+                <h3 class="audience-card__title">ХОЧЕТ СОЗДАТЬ<br />ПРОДАЮЩЕЕ ПОРТФОЛИО</h3>
+              </div>
+              <div class="audience-card__bottom">
+                <p class="audience-card__desc">и создать поток клиентов</p>
+              </div>
+            </div>
+            <img src="assets/card-4-macbook.png" alt="" class="audience-card__sticker audience-card__sticker--macbook" aria-hidden="true" />
+          </article>
+
+          <!-- Card 5 -->
+          <article class="audience-card">
+            <img src="assets/card-5-dice.png" alt="" class="audience-card__underlay audience-card__sticker--dice" aria-hidden="true" />
+            <div class="audience-card__box">
+              <div class="audience-card__top">
+                <h3 class="audience-card__title">ХОЧЕТ ПРЕВРАТИТЬ ИНТЕРЕС<br />К ВИДЕО И КРЕАТИВУ</h3>
+              </div>
+              <div class="audience-card__bottom">
+                <p class="audience-card__desc">в источник дохода</p>
+              </div>
+            </div>
+            <img src="assets/card-5-dice.png" alt="" class="audience-card__sticker audience-card__sticker--dice" aria-hidden="true" />
+          </article>
+        </div>
+
+        <div class="slider-dots" id="audienceDots" role="tablist" aria-label="Выбор карточки">
+          <button type="button" class="slider-dots__dot is-active" data-index="0" aria-label="Карточка 1"></button>
+          <button type="button" class="slider-dots__dot" data-index="1" aria-label="Карточка 2"></button>
+          <button type="button" class="slider-dots__dot" data-index="2" aria-label="Карточка 3"></button>
+          <button type="button" class="slider-dots__dot" data-index="3" aria-label="Карточка 4"></button>
+          <button type="button" class="slider-dots__dot" data-index="4" aria-label="Карточка 5"></button>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           SCREEN 3: «THE CREATOR» — 3 INTERACTIVE TABS + VIDEO
+      ====================================================== -->
+      <section class="section-creator" id="creator">
+        <h2 class="display-title display-title--creator">
+          <span class="sr-only">THE CREATOR</span>
+          <img src="assets/title-the-creator.png" alt="THE CREATOR" width="274" height="64" />
+        </h2>
+
+        <div class="creator-stage" id="creatorStage">
+          <div class="creator-headline-wrap">
+            <h3 class="creator-headline" id="creatorHeadline">КРЕАТИВ — МОЯ ОСНОВА</h3>
+          </div>
+
+          <p class="creator-subtext" id="creatorSubtext">
+            Не собираю видео по шаблонам<br />и не гонюсь за каждым трендом.
+          </p>
+
+          <div class="creator-visual">
+            <!-- Three full-height portraits cross-fading cleanly -->
+            <div class="creator-photo-wrap">
+              <img
+                src="assets/creator-trends.png"
+                alt="Дмитрий — обучил более 100 учеников"
+                class="creator-photo"
+                data-creator-tab="trends"
+              />
+              <img
+                src="assets/creator-creative.png"
+                alt="Дмитрий — креатив моя основа"
+                class="creator-photo is-active"
+                data-creator-tab="creative"
+              />
+              <img
+                src="assets/creator-money.png"
+                alt="Дмитрий — намонтажил на 5 млн рублей"
+                class="creator-photo"
+                data-creator-tab="money"
+              />
+            </div>
+
+            <!-- Phone mockup with video player slot -->
+            <div class="phone-mockup">
+              <div class="phone-mockup__status">
+                <span>12:12</span>
+                <span class="phone-mockup__island" aria-hidden="true"></span>
+                <span>52%</span>
+              </div>
+
+              <div class="phone-mockup__meta">
+                <span class="phone-mockup__tag" id="phoneTagLeft">CREATOR</span>
+                <span class="phone-mockup__tag phone-mockup__tag--muted" id="phoneTagRight">02 / 03</span>
+              </div>
+
+              <div class="phone-mockup__screen" id="phoneScreen">
+                <video
+                  id="creatorVideo"
+                  class="phone-mockup__video"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+
+                <!-- Clean fallback shown automatically when video file isn't added yet -->
+                <div class="phone-mockup__placeholder" id="phonePlaceholder">
+                  <div class="phone-mockup__play-badge" aria-hidden="true">▶</div>
+                  <span class="phone-mockup__placeholder-label">VIDEO REEL</span>
+                </div>
+
+                <!-- Sound toggle button (visible when video is loaded) -->
+                <button
+                  type="button"
+                  class="phone-mockup__mute"
+                  id="phoneMuteBtn"
+                  aria-label="Включить или выключить звук"
+                  hidden
+                >
+                  🔇
+                </button>
+              </div>
+
+              <div class="phone-mockup__progress" aria-hidden="true">
+                <div class="phone-mockup__progress-fill" id="phoneProgressFill"></div>
+              </div>
+
+              <p class="phone-mockup__caption" id="phoneCaption">
+                Экспериментирую с визуалом, анимацией, нейросетями и ищу решения, которые делают монтаж узнаваемым.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabs: ТРЕНДЫ | КРЕАТИВ | ЗАРАБОТОК -->
+        <div class="creator-tabs" role="tablist" aria-label="Разделы о создателе">
+          <button type="button" class="creator-tabs__btn" role="tab" aria-selected="false" data-tab="trends">
+            ТРЕНДЫ
+          </button>
+          <button type="button" class="creator-tabs__btn is-active" role="tab" aria-selected="true" data-tab="creative">
+            КРЕАТИВ
+          </button>
+          <button type="button" class="creator-tabs__btn" role="tab" aria-selected="false" data-tab="money">
+            ЗАРАБОТОК
+          </button>
+        </div>
+
+        <div class="creator-cta-wrap">
+          <a href="#tariff" class="btn-primary js-scroll">
+            <span class="btn-primary__text">хочу стать как Дима</span>
+            <span class="btn-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           SCREEN 4: «ПРОГРАММА» — 3 MODULES
+      ====================================================== -->
+      <section class="section-program" id="program">
+        <div class="program-header">
+          <h2 class="display-title display-title--program">
+            <span class="sr-only">ПРОГРАММА</span>
+            <img src="assets/title-programma.png" alt="ПРОГРАММА" width="275" height="78" />
+          </h2>
+          <img
+            src="assets/sticker-boy-phone.png"
+            alt=""
+            class="program-header__sticker"
+            aria-hidden="true"
+          />
+        </div>
+
+        <!-- Grey horizontal tab strip -->
+        <div class="program-tabs" role="tablist" aria-label="Модули программы">
+          <button type="button" class="program-tabs__btn is-active" role="tab" aria-selected="true" data-module="0">
+            ТРЕНДЫ
+          </button>
+          <button type="button" class="program-tabs__btn" role="tab" aria-selected="false" data-module="1">
+            КРЕАТИВ
+          </button>
+          <button type="button" class="program-tabs__btn" role="tab" aria-selected="false" data-module="2">
+            ЗАРАБОТОК
+          </button>
+        </div>
+
+        <!-- Module Card Container (supports click-tabs & horizontal swipe) -->
+        <div class="program-card-viewport" id="programViewport">
+          <!-- Module 1 -->
+          <article class="module-card is-active" data-module-panel="0">
+            <div class="module-card__meta">
+              <span>модуль 1</span>
+              <span>уроков [ 1 ]</span>
+            </div>
+            <div class="module-card__title-row">
+              <h3>ТРЕНДЫ 2027</h3>
+            </div>
+            <div class="module-card__art module-card__art--trio">
+              <img src="assets/sticker-boy-phone.png" alt="" class="module-trio__side module-trio__side--left" aria-hidden="true" />
+              <img src="assets/sticker-boy-phone.png" alt="Тренды 2027" class="module-trio__center" />
+              <img src="assets/sticker-boy-phone.png" alt="" class="module-trio__side module-trio__side--right" aria-hidden="true" />
+            </div>
+            <div class="module-card__desc">
+              <p>Что будет в тренде в мире монтажа в 2027 году?<br />ИИ и монтаж: помощник или конкурент?<br />Практика: подборка ИИ-сервисов с плюсами и минусами</p>
+            </div>
+          </article>
+
+          <!-- Module 2 -->
+          <article class="module-card" data-module-panel="1">
+            <div class="module-card__meta">
+              <span>модуль 2</span>
+              <span>уроков [ 2 ]</span>
+            </div>
+            <div class="module-card__title-row">
+              <h3>КРЕАТИВНЫЙ МОНТАЖ С 0 ДО ГОТОВОГО РОЛИКА</h3>
+            </div>
+            <div class="module-card__art">
+              <img src="assets/module-2-art.png" alt="Креативный монтаж" class="module-art__img module-art__img--m2" />
+            </div>
+            <div class="module-card__desc">
+              <p>Превращаем расплывчатую идею в чёткое визуальное решение: разбор концепции, сборка, доведение до коммерческого уровня. Практика: собираете концепцию и свой первый креативный ролик</p>
+            </div>
+          </article>
+
+          <!-- Module 3 -->
+          <article class="module-card" data-module-panel="2">
+            <div class="module-card__meta">
+              <span>модуль 3</span>
+              <span>уроков [ 1 ]</span>
+            </div>
+            <div class="module-card__title-row">
+              <h3>ЗАРАБОТОК И УПАКОВКА ПОРТФОЛИО</h3>
+            </div>
+            <div class="module-card__art">
+              <img src="assets/module-3-art.png" alt="Заработок и упаковка портфолио" class="module-art__img module-art__img--m3" />
+            </div>
+            <div class="module-card__desc">
+              <p>Как ставить ценник за ролик, где искать заказчиков, скрипты продаж, сервисы для поиска заказов.<br />Практика: собираете портфолио с нуля и показ демо-заказа</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           MARQUEE 2
+      ====================================================== -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>хочу заработать денег с монтажа в 2027 году</span>
+          <span>хочу заработать денег с монтажа в 2027 году</span>
+          <span>хочу заработать денег с монтажа в 2027 году</span>
+          <span>хочу заработать денег с монтажа в 2027 году</span>
+          <span>хочу заработать денег с монтажа в 2027 году</span>
+        </div>
+        <div class="marquee__track" aria-hidden="true">
+          <span>хочу заработать денег с монтажа в 2027 году</span>
+          <span>хочу заработать денег с монтажа в 2027 году</span>
+          <span>хочу заработать денег с монтажа в 2027 году</span>
+          <span>хочу заработать денег с монтажа в 2027 году</span>
+          <span>хочу заработать денег с монтажа в 2027 году</span>
+        </div>
+      </div>
+
+      <!-- =====================================================
+           SCREEN 5: OFFER / TARIFF — «КОД МОНТАЖЁРА»
+      ====================================================== -->
+      <section class="section-offer" id="tariff">
+        <h2 class="display-title display-title--offer">
+          <span class="sr-only">КОД МОНТАЖЁРА</span>
+          <img src="assets/title-kod-montazhera.png" alt="КОД МОНТАЖЁРА" width="279" height="72" />
+        </h2>
+
+        <div class="offer-collage">
+          <img
+            src="assets/offer-dima-cam.png"
+            alt="Дмитрий с видеокамерой"
+            class="offer-collage__photo"
+          />
+
+          <!-- Module 1 badge -->
+          <button type="button" class="glass-card glass-card--m1 js-jump-module" data-jump-module="0">
+            <img src="assets/sticker-boy-phone.png" alt="" class="glass-card__sticker" aria-hidden="true" />
+            <div class="glass-card__surface">
+              <div class="glass-card__head">модуль 1</div>
+              <div class="glass-card__body">ТРЕНДЫ 2027</div>
+            </div>
+          </button>
+
+          <!-- Module 2 badge -->
+          <button type="button" class="glass-card glass-card--m2 js-jump-module" data-jump-module="1">
+            <img src="assets/sticker-boy-phone.png" alt="" class="glass-card__sticker" aria-hidden="true" />
+            <div class="glass-card__surface">
+              <div class="glass-card__head">модуль 2</div>
+              <div class="glass-card__body">КРЕАТИВНЫЙ МОНТАЖ</div>
+            </div>
+          </button>
+
+          <!-- Module 3 badge -->
+          <button type="button" class="glass-card glass-card--m3 js-jump-module" data-jump-module="2">
+            <img src="assets/sticker-boy-phone.png" alt="" class="glass-card__sticker" aria-hidden="true" />
+            <div class="glass-card__surface">
+              <div class="glass-card__head">модуль 3</div>
+              <div class="glass-card__body">ЗАРАБОТОК</div>
+            </div>
+          </button>
+
+          <!-- Materials badge -->
+          <div class="glass-card glass-card--materials">
+            <img src="assets/sticker-boy-phone.png" alt="" class="glass-card__sticker glass-card__sticker--lg" aria-hidden="true" />
+            <div class="glass-card__surface">
+              <div class="glass-card__head">материалы для роста</div>
+              <div class="glass-card__body glass-card__body--sm">
+                PDF-гайды по трендам<br />
+                и ИИ-инструментам,<br />
+                гайд по типографике,<br />
+                практика сборки концепции,<br />
+                скрипты продаж и подборка<br />
+                сервисов для поиска клиентов
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Price & CTA block -->
+        <div class="price-block">
+          <img
+            src="assets/sticker-boy-phone.png"
+            alt=""
+            class="price-block__sticker"
+            aria-hidden="true"
+          />
+
+          <div class="price-box">
+            <div class="price-box__meta">
+              <span>доступ</span>
+              <span>6 месяцев</span>
+            </div>
+            <div class="price-box__values">
+              <div class="price-box__main">9.450 РУБЛЕЙ</div>
+              <div class="price-box__monthly">3200 ₽/мес</div>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn-primary btn-primary--tariff js-open-modal"
+            data-plan="Полная оплата (9.450 ₽)"
+          >
+            <span class="btn-primary__text">занять место</span>
+            <span class="btn-arrow" aria-hidden="true">↗</span>
+          </button>
+
+          <button
+            type="button"
+            class="installment-link js-open-modal"
+            data-plan="Рассрочка (3.200 ₽/мес)"
+          >
+            оплатить в рассрочку
+          </button>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           FOOTER: «КОНТАКТЫ» + LEGAL
+      ====================================================== -->
+      <footer class="section-contacts" id="contacts">
+        <div class="contacts-bag-wrap">
+          <img
+            src="assets/contacts-bag.png"
+            alt=""
+            class="contacts-bag__img"
+            aria-hidden="true"
+          />
+
+          <div class="contacts-bag__content">
+            <h2 class="contacts-title">КОНТАКТЫ</h2>
+
+            <div class="contacts-links">
+              <img
+                src="assets/sticker-boy-phone.png"
+                alt=""
+                class="contacts-links__sticker"
+                aria-hidden="true"
+              />
+              <div class="contacts-links__list">
+                <a href="#" data-config-link="telegram" target="_blank" rel="noopener noreferrer">ТЕЛЕГРАМ</a>
+                <a href="#" data-config-link="instagram" target="_blank" rel="noopener noreferrer">ИНСТАГРАМ*</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="legal-ip">
+          Индивидуальный предприниматель<br />
+          Мозжухин Дмитрий Сергеевич<br />
+          ИНН: 781452652892<br />
+          ОГРНИП: 325784700429414<br />
+          Электронная почта:
+          <a href="mailto:dmitrijmozzhuhin@yandex.ru" class="legal-ip__mail">dmitrijmozzhuhin@yandex.ru</a>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom__left">
+            <a href="#" data-config-link="offer" target="_blank" rel="noopener noreferrer">Публичная оферта</a>
+            <a href="#" data-config-link="privacy" target="_blank" rel="noopener noreferrer">Политика обработки персональных данных</a>
+            <a href="#" data-config-link="pdnConsent" target="_blank" rel="noopener noreferrer">Согласие на обработку персональных данных</a>
+            <a href="#" data-config-link="marketingConsent" target="_blank" rel="noopener noreferrer">Согласие на получение рекламной рассылки</a>
+          </div>
+          <div class="footer-bottom__right">
+            <span>разработка сайта</span>
+            <a href="#" data-config-link="developer" target="_blank" rel="noopener noreferrer">@s1marsa</a>
+          </div>
+        </div>
+
+        <p class="footer-meta-disclaimer">
+          * Компания Meta Platforms Inc., владеющая социальными сетями Facebook и Instagram,
+          по решению суда от 21.03.2022 признана экстремистской организацией, её деятельность
+          на территории РФ запрещена.
+        </p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- =====================================================
+       COOKIE BANNER
+  ====================================================== -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Уведомление об использовании Cookie" hidden>
+    <button type="button" class="cookie-banner__close" id="cookieCloseBtn" aria-label="Закрыть уведомление">✕</button>
+    <p class="cookie-banner__text">
+      Продолжая использовать сайт, вы предоставляете согласие на использование Cookie-файлов
+      на условиях
+      <a href="#" class="cookie-banner__link" data-config-link="privacy" target="_blank" rel="noopener noreferrer">Политики обработки персональных данных</a>.
+      Если вы не хотите, чтобы ваши данные обрабатывались, измените настройки браузера.
+    </p>
+    <button type="button" class="cookie-banner__ok" id="cookieOkBtn">Ок</button>
+  </div>
+
+  <!-- =====================================================
+       MODAL: ФОРМА ЗАЯВКИ («ЗАНЯТЬ МЕСТО»)
+  ====================================================== -->
+  <div class="modal-backdrop" id="leadModal" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle" hidden>
+    <div class="modal-sheet">
+      <div class="modal-sheet__header">
+        <div>
+          <div class="modal-sheet__eyebrow">ПРАКТИКУМ 2027 · СТАРТ 1 ДЕКАБРЯ</div>
+          <h2 class="modal-sheet__title" id="leadModalTitle">ЗАНЯТЬ МЕСТО</h2>
+        </div>
+        <button type="button" class="modal-sheet__close" id="leadModalClose" aria-label="Закрыть окно">✕</button>
+      </div>
+
+      <form class="lead-form" id="leadForm" novalidate>
+        <!-- Honeypot anti-spam field (hidden from real users) -->
+        <input type="text" name="website" class="lead-form__hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+        <!-- Tariff choice -->
+        <div class="lead-plan-toggle" role="group" aria-label="Вариант оплаты">
+          <button type="button" class="lead-plan-toggle__btn is-active" data-plan-choice="Полная оплата (9.450 ₽)">
+            9.450 ₽ полностью
+          </button>
+          <button type="button" class="lead-plan-toggle__btn" data-plan-choice="Рассрочка (3.200 ₽/мес)">
+            3.200 ₽/мес рассрочка
+          </button>
+        </div>
+        <input type="hidden" name="plan" id="leadPlanInput" value="Полная оплата (9.450 ₽)" />
+
+        <div class="lead-field">
+          <label for="leadName" class="lead-field__label">Имя</label>
+          <input
+            type="text"
+            id="leadName"
+            name="name"
+            class="lead-field__input"
+            placeholder="Как к вам обращаться"
+            autocomplete="name"
+            required
+          />
+        </div>
+
+        <div class="lead-field">
+          <label for="leadTelegram" class="lead-field__label">Ник в Telegram</label>
+          <input
+            type="text"
+            id="leadTelegram"
+            name="telegram"
+            class="lead-field__input"
+            placeholder="@username"
+            autocomplete="username"
+            required
+          />
+        </div>
+
+        <div class="lead-field">
+          <label for="leadPhone" class="lead-field__label">Номер телефона</label>
+          <input
+            type="tel"
+            id="leadPhone"
+            name="phone"
+            class="lead-field__input"
+            placeholder="+7 (999) 000-00-00"
+            inputmode="tel"
+            autocomplete="tel"
+            required
+          />
+        </div>
+
+        <!-- Checkboxes (both strictly unchecked by default) -->
+        <div class="lead-checks">
+          <label class="lead-check">
+            <input type="checkbox" id="checkOffer" name="accept_offer" class="lead-check__input" required />
+            <span class="lead-check__box" aria-hidden="true"></span>
+            <span class="lead-check__text">
+              Я соглашаюсь с условиями
+              <a href="#" class="lead-check__link" data-config-link="offer" target="_blank" rel="noopener noreferrer">Публичной оферты</a>
+            </span>
+          </label>
+
+          <label class="lead-check">
+            <input type="checkbox" id="checkMarketing" name="accept_marketing" class="lead-check__input" />
+            <span class="lead-check__box" aria-hidden="true"></span>
+            <span class="lead-check__text">
+              Я предоставляю своё
+              <a href="#" class="lead-check__link" data-config-link="marketingConsent" target="_blank" rel="noopener noreferrer">Согласие</a>
+              на получение рекламной рассылки
+            </span>
+          </label>
+        </div>
+
+        <div class="lead-form__error" id="leadFormError" role="alert" hidden></div>
+
+        <button type="submit" class="btn-primary lead-form__submit" id="leadSubmitBtn">
+          <span class="btn-primary__text">отправить заявку</span>
+          <span class="btn-arrow" aria-hidden="true">↗</span>
+        </button>
+      </form>
+
+      <!-- Success state -->
+      <div class="lead-success" id="leadSuccess" hidden>
+        <div class="lead-success__badge" aria-hidden="true">✓</div>
+        <h3 class="lead-success__title">ЗАЯВКА ОТПРАВЛЕНА</h3>
+        <p class="lead-success__desc">
+          Мы получили ваши контакты и скоро напишем вам в Telegram.
+          Если хотите ускорить ответ — напишите нам напрямую:
+        </p>
+        <a
+          href="https://t.me/montagecore"
+          class="btn-primary lead-success__cta"
+          data-config-link="telegram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="btn-primary__text">написать в @montagecore</span>
+          <span class="btn-arrow" aria-hidden="true">↗</span>
+        </a>
+        <button type="button" class="lead-success__back" id="leadSuccessClose">вернуться на сайт</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
